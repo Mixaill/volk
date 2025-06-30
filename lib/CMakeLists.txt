@@ -96,7 +96,7 @@ execute_process(
 try_compile(
     HAVE_RVV_INTRINSICS
     ${CMAKE_BINARY_DIR}
-    ${CMAKE_SOURCE_DIR}/cmake/Checks/check-rvv-intrinsics.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/cmake/Checks/check-rvv-intrinsics.c
 )
 if(HAVE_RVV_INTRINSICS)
     message(STATUS "Checking RVV intrinsics - found")
